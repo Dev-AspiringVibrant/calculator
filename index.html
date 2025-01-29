@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="box">
+            <div id="answer">
+                <form action="javascript:void(0)" id="equation-bar">
+                    <input type="text" id="answerthee">
+                </form>
+            </div>
+            <div class="buttons">
+                <div class="spacing">
+                    <button id="zero" onclick="getNumber(0)">0</button>
+                    <button id="one" onclick="getNumber(1)">1</button>
+                    <button id="two" onclick="getNumber(2)">2</button>
+                    <button id="three" onclick="getNumber(3)">3</button>
+                    <button id="four" onclick="getNumber(4)">4</button>
+                    <button id="five" onclick="getNumber(5)">5</button>
+                    <button id="six" onclick="getNumber(6)">6</button>
+                    <button id="seven" onclick="getNumber(7)">7</button>
+                    <button id="eight" onclick="getNumber(8)">8</button>
+                    <button id="nine" onclick="getNumber(9)">9</button>
+                </div>
+                <div class="spacing">
+                    <button onclick="clearDisplay()">CE</button>
+                    <button id="plus" onclick="getOperator('+')">+</button>
+                    <button id="minus" onclick="getOperator('-')">-</button>
+                    <button id="multiply" onclick="getOperator('*')">*</button>
+                    <button id="divide" onclick="getOperator('/')">/</button>
+                    <button id="equals" onclick="resultEquation('=')">=</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
