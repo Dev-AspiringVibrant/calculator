@@ -50,8 +50,8 @@ const calculateEquals = () => {
     } else if (operation === '/') {
         result = firstNumber / secondNumber;
         display.value = result;
-    } else if (firstNumber / secondNumber == "NaN") {
-        result = "0";
+    } else if (result == NaN) {
+        result = 0;
         display.value = result;
     }
 }
