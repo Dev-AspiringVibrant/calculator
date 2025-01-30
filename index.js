@@ -40,15 +40,18 @@ function clearDisplay() {
 const calculateEquals = () => {
     if (operation === '+') {
         result = firstNumber + secondNumber;
-        display.value = result
+        display.value = result;
     } else if (operation === '-') {
         result = firstNumber - secondNumber;
-        display.value = result
+        display.value = result;
     } else if (operation === '*') {
         result = firstNumber * secondNumber;
-        display.value = result
+        display.value = result;
     } else if (operation === '/') {
         result = firstNumber / secondNumber;
-        display.value = result
+        display.value = result;
+    } else if (firstNumber / secondNumber == "NaN") {
+        result = "0";
+        display.value = result;
     }
 }
